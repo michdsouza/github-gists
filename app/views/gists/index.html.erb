@@ -1,11 +1,7 @@
 <h1>Private Gists</h1>
 
-<table>
-  <tbody>
-    <% @gists.each do |gist| %>
-      <tr>
-        <td><%= gist %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
+<% @gists.each do |gist| %>
+  <div class="row">
+    <div class="col-md-6"><%= gist %></div>
+  </div>
+<% end %>

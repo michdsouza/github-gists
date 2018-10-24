@@ -16,10 +16,13 @@ class GistsController < ApplicationController
     end
   end
 
-  def show
+  def edit
+    @gist = Github::Gateway.get_gist(params[:id], current_user)
   end
 
   def update
+    Github::Gateway.update_gist(params[:id], params[:gist].to_json, current_user)
+    redirect_to gists_path, notice: "Gist was successfully updated."
   end
 
   def destroy

@@ -1,0 +1,8 @@
+<%= bootstrap_form_for(@gist, url: gist_path(@gist.id), method: :patch, layout: :horizontal) do |f| %>
+  <%= f.text_field :description %>
+  <%= f.text_field :filename %>
+  <%= f.text_area :content %>
+  <%= f.submit "Update Gist", class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Back', gists_path %>

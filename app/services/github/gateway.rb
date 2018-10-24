@@ -12,6 +12,13 @@ module Github
       self.process(response)
     end
 
+    def self.save(gist, user)
+      gist = JSON.parse(gist)
+      body = { description: gist['description'], files: { "#{gist['filename']}": {content: gist['content']} } }.to_json
+      headers = { "Authorization": "token #{user.oauth_token}", "User-Agent": "github-gists"}
+      response = post("/gists", body: body, headers: headers)
+    end
+
     private
 
     def self.process(response)

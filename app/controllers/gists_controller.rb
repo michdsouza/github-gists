@@ -5,6 +5,15 @@ class GistsController < ApplicationController
   end
 
   def new
+    @gist = Gist.new
+  end
+
+  def create
+    if Github::Gateway.save(gist_params.to_json, current_user)
+      redirect_to gists_path, notice: "Gist was successfully created."
+    else
+      render :new
+    end
   end
 
   def show
@@ -15,4 +24,11 @@ class GistsController < ApplicationController
 
   def destroy
   end
+
+  private
+
+  def gist_params
+    params.require(:gist).permit(:description, :filename, :content)
+  end
+
 end

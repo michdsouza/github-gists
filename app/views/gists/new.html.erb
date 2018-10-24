@@ -1,0 +1,8 @@
+<%= bootstrap_form_for(@gist, layout: :horizontal) do |f| %>
+  <%= f.text_field :description, placeholder: 'Gist description....' %>
+  <%= f.text_field :filename, placeholder: 'Filename including extension....' %>
+  <%= f.text_area :content %>
+  <%= f.submit class: 'btn btn-primary' %>
+<% end %>
+
+<%= link_to 'Back', gists_path %>

@@ -5,37 +5,35 @@ git_source(:github) do |repo_name|
   "https://github.com/#{repo_name}.git"
 end
 
-
+gem "bootstrap_form"
+gem 'coffee-rails', '~> 4.2'
+gem 'httparty'
+gem 'jbuilder', '~> 2.5'
+gem "less-rails"
+gem 'omniauth-github'
+gem 'puma', '~> 3.7'
 gem 'rails', '~> 5.1.6'
 gem 'sqlite3'
-gem 'puma', '~> 3.7'
 gem 'sass-rails', '~> 5.0'
-gem 'uglifier', '>= 1.3.0'
-
-gem 'coffee-rails', '~> 4.2'
-gem 'turbolinks', '~> 5'
-gem 'jbuilder', '~> 2.5'
-
-gem 'omniauth-github'
-gem 'httparty'
 gem "therubyracer"
-gem "less-rails"
+gem 'turbolinks', '~> 5'
 gem "twitter-bootstrap-rails"
-gem "bootstrap_form"
+gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+gem 'uglifier', '>= 1.3.0'
 
 group :development, :test do
   gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
   gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-  gem 'rspec-rails'
   gem 'factory_girl_rails'
+  gem 'rspec-rails'
+  gem 'selenium-webdriver'
+  gem 'vcr'
+  gem 'webmock'
 end
 
 group :development do
-  gem 'web-console', '>= 3.3.0'
   gem 'listen', '>= 3.0.5', '< 3.2'
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
+  gem 'web-console', '>= 3.3.0'
 end
-
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]

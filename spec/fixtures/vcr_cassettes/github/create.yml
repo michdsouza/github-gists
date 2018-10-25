@@ -1,0 +1,76 @@
+---
+http_interactions:
+- request:
+    method: post
+    uri: https://api.github.com/gists
+    body:
+      encoding: UTF-8
+      string: '{"description":"Test gist 22121","files":{"":{"content":"fafdsdfdsfsf"}}}'
+    headers:
+      Authorization:
+      - token my-access-token
+      User-Agent:
+      - github-gists
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Thu, 25 Oct 2018 19:45:18 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3272'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4983'
+      X-Ratelimit-Reset:
+      - '1540496818'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - '"98164b1e4fc22e76c5af0fe04659c92f"'
+      X-Oauth-Scopes:
+      - gist
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - a867c8b4aa3ba8d9e7d0
+      Location:
+      - https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 3DDD:77F4:94D78:1424A7:5BD21D4A
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16","forks_url":"https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16/forks","commits_url":"https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16/commits","id":"6329a0fcace47dceafbf13374e888b16","node_id":"MDQ6R2lzdDYzMjlhMGZjYWNlNDdkY2VhZmJmMTMzNzRlODg4YjE2","git_pull_url":"https://gist.github.com/6329a0fcace47dceafbf13374e888b16.git","git_push_url":"https://gist.github.com/6329a0fcace47dceafbf13374e888b16.git","html_url":"https://gist.github.com/6329a0fcace47dceafbf13374e888b16","files":{"gistfile1.txt":{"filename":"gistfile1.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/6329a0fcace47dceafbf13374e888b16/raw/cf82f3e9ec3381b4592c62fd457b44b2131f7724/gistfile1.txt","size":12,"truncated":false,"content":"fafdsdfdsfsf"}},"public":false,"created_at":"2018-10-25T19:45:18Z","updated_at":"2018-10-25T19:45:18Z","description":"Test
+        gist 22121","comments":0,"user":null,"comments_url":"https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"version":"4e66139804e5522950e144e79d84390e577d0446","committed_at":"2018-10-25T19:45:17Z","change_status":{"total":1,"additions":1,"deletions":0},"url":"https://api.github.com/gists/6329a0fcace47dceafbf13374e888b16/4e66139804e5522950e144e79d84390e577d0446"}],"truncated":false}'
+    http_version:
+  recorded_at: Thu, 25 Oct 2018 19:45:18 GMT
+recorded_with: VCR 4.0.0

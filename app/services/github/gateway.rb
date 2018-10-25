@@ -19,14 +19,13 @@ module Github
       body = { description: gist['description'], files: { "#{gist['filename']}": {content: gist['content']} } }.to_json
       headers = { "Authorization": "token #{user.oauth_token}", "User-Agent": "github-gists"}
       response = post("/gists", body: body, headers: headers)
-      response.ok? ? response : raise(ApiError)
+      response.created? ? response : raise(ApiError)
     end
 
     # API: Read
     def self.get_gist(gist_id, user)
       response = get("/gists/#{gist_id}?access_token=#{user.oauth_token}")
-      response = self.make_gist(response)
-      response.ok? ? response : raise(ApiError)
+      response.ok? ? self.make_gist(response) : raise(ApiError)
     end
 
     # API: Update
@@ -41,7 +40,7 @@ module Github
     # API: Delete
     def self.delete_gist(gist_id, user)
       response = delete("/gists/#{gist_id}?access_token=#{user.oauth_token}")
-      response.ok? ? response : raise(ApiError)
+      response.success? ? response : raise(ApiError)
     end
 
     private
@@ -49,16 +48,11 @@ module Github
     def self.translate(response)
       response = response.parsed_response
       response.select { |gist| !gist['public'] }
-              .map { |gist| {id: gist['id'], description: gist['description']} }
+              .map { |gist| Gist.new(gist['id'], gist['description'], gist['filename']) }
     end
 
     def self.make_gist(response)
-      gist = Gist.new
-      gist.id = response['id']
-      gist.description = response['description']
-      gist.filename = response["files"].first[0]
-      gist.content = response["files"].first[1]['content']
-      gist
+      gist = Gist.new(response['id'], response['description'], response['files'].first[0], response['files'].first[1]['content'])
     end
 
   end

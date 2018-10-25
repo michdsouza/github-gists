@@ -7,7 +7,7 @@ class GistsController < ApplicationController
   end
 
   def new
-    @gist = Gist.new
+    @gist = Gist.new(nil)
   end
 
   def create

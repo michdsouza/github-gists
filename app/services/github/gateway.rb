@@ -7,53 +7,52 @@ module Github
 
     base_uri 'https://api.github.com'
 
-    def self.get_private_gists(user)
+    # API: Index
+    def self.get_gists(user)
       response = get("/gists?access_token=#{user.oauth_token}")
-      self.process_gists(response)
-      # TODO error handling
+      response.ok? ? self.translate(response) : raise(ApiError)
     end
 
-    def self.save(gist, user)
+    # API: Create
+    def self.create(gist, user)
       gist = JSON.parse(gist)
       body = { description: gist['description'], files: { "#{gist['filename']}": {content: gist['content']} } }.to_json
       headers = { "Authorization": "token #{user.oauth_token}", "User-Agent": "github-gists"}
       response = post("/gists", body: body, headers: headers)
-      # TODO error handling
+      response.ok? ? response : raise(ApiError)
     end
 
+    # API: Read
     def self.get_gist(gist_id, user)
       response = get("/gists/#{gist_id}?access_token=#{user.oauth_token}")
-      self.process_gist(response)
-      # TODO error handling
+      response = self.make_gist(response)
+      response.ok? ? response : raise(ApiError)
     end
 
+    # API: Update
     def self.update_gist(gist_id, gist, user)
       gist = JSON.parse(gist)
       body = { description: gist['description'], files: { "#{gist['filename']}": {content: gist['content']} } }.to_json
       headers = { "Authorization": "token #{user.oauth_token}", "User-Agent": "github-gists"}
       response = patch("/gists/#{gist_id}", body: body, headers: headers)
-      # TODO error handling
+      response.ok? ? response : raise(ApiError)
     end
 
+    # API: Delete
     def self.delete_gist(gist_id, user)
       response = delete("/gists/#{gist_id}?access_token=#{user.oauth_token}")
-      # TODO error handling
+      response.ok? ? response : raise(ApiError)
     end
 
     private
 
-    def self.process_gists(response)
+    def self.translate(response)
       response = response.parsed_response
-      gists = []
-      response.each do |gist|
-        unless gist['public']
-          gists << {id: gist['id'], description: gist['description']}
-        end
-      end
-      gists
+      response.select { |gist| !gist['public'] }
+              .map { |gist| {id: gist['id'], description: gist['description']} }
     end
 
-    def self.process_gist(response)
+    def self.make_gist(response)
       gist = Gist.new
       gist.id = response['id']
       gist.description = response['description']

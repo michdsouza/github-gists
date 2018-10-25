@@ -1,8 +1,9 @@
 class GistsController < ApplicationController
   before_action :authorize_user
+  rescue_from Github::ApiError, :with => :render_error
 
   def index
-    @gists = Github::Gateway.get_private_gists(current_user)
+    @gists = Github::Gateway.get_gists(current_user)
   end
 
   def new
@@ -10,7 +11,7 @@ class GistsController < ApplicationController
   end
 
   def create
-    if Github::Gateway.save(gist_params.to_json, current_user)
+    if Github::Gateway.create(gist_params.to_json, current_user)
       redirect_to gists_path, notice: "Gist was successfully created."
     else
       render :new

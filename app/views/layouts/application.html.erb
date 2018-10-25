@@ -1,8 +1,11 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <title>GithubGists</title>
+    <title>Github Gists</title>
     <%= csrf_meta_tags %>
+    <% if current_user.present? %>
+      <%= button_to "Sign Out", signout_path, method: :delete %>
+    <% end %>
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>

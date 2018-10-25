@@ -10,6 +10,7 @@ module Github
     def self.get_private_gists(user)
       response = get("/gists?access_token=#{user.oauth_token}")
       self.process_gists(response)
+      # TODO error handling
     end
 
     def self.save(gist, user)
@@ -53,10 +54,12 @@ module Github
     end
 
     def self.process_gist(response)
-      gist = Gist.new(response['id'],
-                      response['description'],
-                      response["files"].first[0],
-                      response["files"].first[1]['content'])
+      gist = Gist.new
+      gist.id = response['id']
+      gist.description = response['description']
+      gist.filename = response["files"].first[0]
+      gist.content = response["files"].first[1]['content']
+      gist
     end
 
   end

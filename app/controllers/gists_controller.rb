@@ -1,4 +1,5 @@
 class GistsController < ApplicationController
+  before_action :authorize_user
 
   def index
     @gists = Github::Gateway.get_private_gists(current_user)
@@ -36,4 +37,7 @@ class GistsController < ApplicationController
     params.require(:gist).permit(:description, :filename, :content)
   end
 
+  def authorize_user
+    redirect_to root_url unless current_user
+  end
 end

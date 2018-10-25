@@ -34,6 +34,11 @@ module Github
       # TODO error handling
     end
 
+    def self.delete_gist(gist_id, user)
+      response = delete("/gists/#{gist_id}?access_token=#{user.oauth_token}")
+      # TODO error handling
+    end
+
     private
 
     def self.process_gists(response)

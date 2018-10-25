@@ -26,6 +26,8 @@ class GistsController < ApplicationController
   end
 
   def destroy
+    Github::Gateway.delete_gist(params[:id], current_user)
+    redirect_to gists_path, notice: "Gist was successfully deleted."
   end
 
   private

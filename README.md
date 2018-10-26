@@ -42,7 +42,7 @@ https://cisco-code-challenge-mdsouza.herokuapp.com
 
 ## Design Choices
 
-To keep the MVP implementation simple, the interface does no support creating or editing gists with multiple files.
+To keep the MVP implementation simple, the interface does not support creating or editing gists with multiple files.
 
 ## CircleCI
 

@@ -1,0 +1,231 @@
+---
+http_interactions:
+- request:
+    method: get
+    uri: https://api.github.com/gists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token my-access-token
+      User-Agent:
+      - github-gists
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 26 Oct 2018 15:58:54 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '16861'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4999'
+      X-Ratelimit-Reset:
+      - '1540573134'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - '"d5394f98aee3bde23212d24b786210dc"'
+      X-Oauth-Scopes:
+      - gist
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - a867c8b4aa3ba8d9e7d0
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 4C56:77F3:5DD3C8:DEE9F1:5BD339BD
+    body:
+      encoding: UTF-8
+      string: '[{"url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8","forks_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/forks","commits_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/commits","id":"7bdb81997dbebb96e5c085b14e936cc8","node_id":"MDQ6R2lzdDdiZGI4MTk5N2RiZWJiOTZlNWMwODViMTRlOTM2Y2M4","git_pull_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8.git","git_push_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8.git","html_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8","files":{"testspec.rb":{"filename":"testspec.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/7bdb81997dbebb96e5c085b14e936cc8/raw/1d524b7c9f19aa9fe5cbcc1e43020f58a1a2d4ef/testspec.rb","size":14}},"public":false,"created_at":"2018-10-26T15:19:36Z","updated_at":"2018-10-26T15:19:36Z","description":"Test
+        gist spec","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7","forks_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/forks","commits_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/commits","id":"7eec1175afef86ca8010c91d1d013ed7","node_id":"MDQ6R2lzdDdlZWMxMTc1YWZlZjg2Y2E4MDEwYzkxZDFkMDEzZWQ3","git_pull_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7.git","git_push_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7.git","html_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7","files":{"gistfile500.txt":{"filename":"gistfile500.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7eec1175afef86ca8010c91d1d013ed7/raw/dd118c4a7081abcfaa69dd0d1f43315ad66c5f14/gistfile500.txt","size":15},"testname.rb":{"filename":"testname.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/7eec1175afef86ca8010c91d1d013ed7/raw/6a5a114faa1e32d84f6216e19c796a71b078128a/testname.rb","size":9}},"public":false,"created_at":"2018-10-26T00:16:58Z","updated_at":"2018-10-26T01:49:07Z","description":"Updated
+        private gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79","forks_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/forks","commits_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/commits","id":"771d34607703f7d0bbdc1d92f2c8ba79","node_id":"MDQ6R2lzdDc3MWQzNDYwNzcwM2Y3ZDBiYmRjMWQ5MmYyYzhiYTc5","git_pull_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79.git","git_push_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79.git","html_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79","files":{"gistfile1.txt":{"filename":"gistfile1.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/771d34607703f7d0bbdc1d92f2c8ba79/raw/338f7e6e62131675ba2331d2811081819a887fd4/gistfile1.txt","size":19}},"public":false,"created_at":"2018-10-25T01:01:59Z","updated_at":"2018-10-25T01:02:00Z","description":"New
+        private gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed","forks_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/forks","commits_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/commits","id":"b9287745812127f5929c21bc781d77ed","node_id":"MDQ6R2lzdGI5Mjg3NzQ1ODEyMTI3ZjU5MjljMjFiYzc4MWQ3N2Vk","git_pull_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed.git","git_push_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed.git","html_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed","files":{"testname.rb":{"filename":"testname.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/b9287745812127f5929c21bc781d77ed/raw/bba5729afd94dfbdce2f526e71bf429749e0b279/testname.rb","size":6}},"public":false,"created_at":"2018-10-24T18:52:07Z","updated_at":"2018-10-25T00:14:09Z","description":"Test
+        description 123","comments":0,"user":null,"comments_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757","forks_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/forks","commits_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/commits","id":"7b8ddc0ee21db93696282f424900c757","node_id":"MDQ6R2lzdDdiOGRkYzBlZTIxZGI5MzY5NjI4MmY0MjQ5MDBjNzU3","git_pull_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757.git","git_push_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757.git","html_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757","files":{"gistfile1.txt":{"filename":"gistfile1.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7b8ddc0ee21db93696282f424900c757/raw/036a75dcaa1261c246cfc946bf9adc58410ba03b/gistfile1.txt","size":11},"gistfile2.txt":{"filename":"gistfile2.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7b8ddc0ee21db93696282f424900c757/raw/f87e46cb88f3d6f5370144fe478bbb13886b41f7/gistfile2.txt","size":11}},"public":true,"created_at":"2018-10-23T22:55:52Z","updated_at":"2018-10-24T22:38:54Z","description":"Public
+        test gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378","forks_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/forks","commits_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/commits","id":"bd2e53640a456793b21f90f9bdbb9378","node_id":"MDQ6R2lzdGJkMmU1MzY0MGE0NTY3OTNiMjFmOTBmOWJkYmI5Mzc4","git_pull_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378.git","git_push_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378.git","html_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378","files":{"flatten.rb":{"filename":"flatten.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/6cf75ea83f7bff4ecbc0b9490dc0a537ddff6458/flatten.rb","size":335},"flatten_test.rb":{"filename":"flatten_test.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/fa133c8664d8cc7253de5e88e836f59db7ebe363/flatten_test.rb","size":313},"test_results":{"filename":"test_results","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/4af375e8880d3dc3ad0faa3e9331d23fc9f5e6e3/test_results","size":122}},"public":false,"created_at":"2016-06-14T00:43:27Z","updated_at":"2016-06-14T00:43:27Z","description":"Citrusbyte
+        array flattener","comments":0,"user":null,"comments_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/adbc485dc6b6703c6868","forks_url":"https://api.github.com/gists/adbc485dc6b6703c6868/forks","commits_url":"https://api.github.com/gists/adbc485dc6b6703c6868/commits","id":"adbc485dc6b6703c6868","node_id":"MDQ6R2lzdGFkYmM0ODVkYzZiNjcwM2M2ODY4","git_pull_url":"https://gist.github.com/adbc485dc6b6703c6868.git","git_push_url":"https://gist.github.com/adbc485dc6b6703c6868.git","html_url":"https://gist.github.com/adbc485dc6b6703c6868","files":{"bash_profile_gist":{"filename":"bash_profile_gist","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/adbc485dc6b6703c6868/raw/c9942fa14c12675d0df0e36bc53a0bd9a67f67cc/bash_profile_gist","size":893}},"public":false,"created_at":"2014-10-10T15:47:46Z","updated_at":"2015-08-29T14:07:28Z","description":".bash_profile","comments":0,"user":null,"comments_url":"https://api.github.com/gists/adbc485dc6b6703c6868/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/25fb7d81ba5b6e83a981","forks_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/forks","commits_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/commits","id":"25fb7d81ba5b6e83a981","node_id":"MDQ6R2lzdDI1ZmI3ZDgxYmE1YjZlODNhOTgx","git_pull_url":"https://gist.github.com/25fb7d81ba5b6e83a981.git","git_push_url":"https://gist.github.com/25fb7d81ba5b6e83a981.git","html_url":"https://gist.github.com/25fb7d81ba5b6e83a981","files":{"gitconfig_gist":{"filename":"gitconfig_gist","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/25fb7d81ba5b6e83a981/raw/1efcc885b8a03509ecfce3e158fc82be97a709d2/gitconfig_gist","size":648}},"public":false,"created_at":"2014-10-10T15:33:03Z","updated_at":"2015-08-29T14:07:28Z","description":".gitconfig","comments":0,"user":null,"comments_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false}]'
+    http_version:
+  recorded_at: Fri, 26 Oct 2018 15:58:54 GMT
+- request:
+    method: post
+    uri: https://api.github.com/gists
+    body:
+      encoding: UTF-8
+      string: '{"description":"Test gist spec","files":{"testspec.rb":{"content":"Test
+        gist spec"}}}'
+    headers:
+      Authorization:
+      - token my-access-token
+      User-Agent:
+      - github-gists
+  response:
+    status:
+      code: 201
+      message: Created
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 26 Oct 2018 15:58:56 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '3275'
+      Status:
+      - 201 Created
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4998'
+      X-Ratelimit-Reset:
+      - '1540573134'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - '"a88f0b05f9cec2556411f640a27688be"'
+      X-Oauth-Scopes:
+      - gist
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - a867c8b4aa3ba8d9e7d0
+      Location:
+      - https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 4C57:77F2:33D8AE:8191A9:5BD339BE
+    body:
+      encoding: UTF-8
+      string: '{"url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea","forks_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/forks","commits_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/commits","id":"a5a03786fbe32b189562f441e5a779ea","node_id":"MDQ6R2lzdGE1YTAzNzg2ZmJlMzJiMTg5NTYyZjQ0MWU1YTc3OWVh","git_pull_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea.git","git_push_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea.git","html_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea","files":{"testspec.rb":{"filename":"testspec.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/a5a03786fbe32b189562f441e5a779ea/raw/1d524b7c9f19aa9fe5cbcc1e43020f58a1a2d4ef/testspec.rb","size":14,"truncated":false,"content":"Test
+        gist spec"}},"public":false,"created_at":"2018-10-26T15:58:55Z","updated_at":"2018-10-26T15:58:55Z","description":"Test
+        gist spec","comments":0,"user":null,"comments_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"forks":[],"history":[{"user":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"version":"8f9a54850eefb54f0bad8f21e5d1abedca061c2f","committed_at":"2018-10-26T15:58:55Z","change_status":{"total":1,"additions":1,"deletions":0},"url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/8f9a54850eefb54f0bad8f21e5d1abedca061c2f"}],"truncated":false}'
+    http_version:
+  recorded_at: Fri, 26 Oct 2018 15:58:56 GMT
+- request:
+    method: get
+    uri: https://api.github.com/gists
+    body:
+      encoding: US-ASCII
+      string: ''
+    headers:
+      Authorization:
+      - token my-access-token
+      User-Agent:
+      - github-gists
+  response:
+    status:
+      code: 200
+      message: OK
+    headers:
+      Server:
+      - GitHub.com
+      Date:
+      - Fri, 26 Oct 2018 15:58:57 GMT
+      Content-Type:
+      - application/json; charset=utf-8
+      Content-Length:
+      - '18873'
+      Status:
+      - 200 OK
+      X-Ratelimit-Limit:
+      - '5000'
+      X-Ratelimit-Remaining:
+      - '4997'
+      X-Ratelimit-Reset:
+      - '1540573134'
+      Cache-Control:
+      - private, max-age=60, s-maxage=60
+      Vary:
+      - Accept, Authorization, Cookie, X-GitHub-OTP
+      Etag:
+      - '"23bbd8c7995a208c5223d1ef287d7d22"'
+      X-Oauth-Scopes:
+      - gist
+      X-Accepted-Oauth-Scopes:
+      - ''
+      X-Oauth-Client-Id:
+      - a867c8b4aa3ba8d9e7d0
+      X-Github-Media-Type:
+      - github.v3; format=json
+      Access-Control-Expose-Headers:
+      - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
+        X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
+      Access-Control-Allow-Origin:
+      - "*"
+      Strict-Transport-Security:
+      - max-age=31536000; includeSubdomains; preload
+      X-Frame-Options:
+      - deny
+      X-Content-Type-Options:
+      - nosniff
+      X-Xss-Protection:
+      - 1; mode=block
+      Referrer-Policy:
+      - origin-when-cross-origin, strict-origin-when-cross-origin
+      Content-Security-Policy:
+      - default-src 'none'
+      X-Github-Request-Id:
+      - 4C58:77F5:C609FF:181EC93:5BD339C0
+    body:
+      encoding: UTF-8
+      string: '[{"url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea","forks_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/forks","commits_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/commits","id":"a5a03786fbe32b189562f441e5a779ea","node_id":"MDQ6R2lzdGE1YTAzNzg2ZmJlMzJiMTg5NTYyZjQ0MWU1YTc3OWVh","git_pull_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea.git","git_push_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea.git","html_url":"https://gist.github.com/a5a03786fbe32b189562f441e5a779ea","files":{"testspec.rb":{"filename":"testspec.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/a5a03786fbe32b189562f441e5a779ea/raw/1d524b7c9f19aa9fe5cbcc1e43020f58a1a2d4ef/testspec.rb","size":14}},"public":false,"created_at":"2018-10-26T15:58:55Z","updated_at":"2018-10-26T15:58:56Z","description":"Test
+        gist spec","comments":0,"user":null,"comments_url":"https://api.github.com/gists/a5a03786fbe32b189562f441e5a779ea/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8","forks_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/forks","commits_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/commits","id":"7bdb81997dbebb96e5c085b14e936cc8","node_id":"MDQ6R2lzdDdiZGI4MTk5N2RiZWJiOTZlNWMwODViMTRlOTM2Y2M4","git_pull_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8.git","git_push_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8.git","html_url":"https://gist.github.com/7bdb81997dbebb96e5c085b14e936cc8","files":{"testspec.rb":{"filename":"testspec.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/7bdb81997dbebb96e5c085b14e936cc8/raw/1d524b7c9f19aa9fe5cbcc1e43020f58a1a2d4ef/testspec.rb","size":14}},"public":false,"created_at":"2018-10-26T15:19:36Z","updated_at":"2018-10-26T15:19:36Z","description":"Test
+        gist spec","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7bdb81997dbebb96e5c085b14e936cc8/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7","forks_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/forks","commits_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/commits","id":"7eec1175afef86ca8010c91d1d013ed7","node_id":"MDQ6R2lzdDdlZWMxMTc1YWZlZjg2Y2E4MDEwYzkxZDFkMDEzZWQ3","git_pull_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7.git","git_push_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7.git","html_url":"https://gist.github.com/7eec1175afef86ca8010c91d1d013ed7","files":{"gistfile500.txt":{"filename":"gistfile500.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7eec1175afef86ca8010c91d1d013ed7/raw/dd118c4a7081abcfaa69dd0d1f43315ad66c5f14/gistfile500.txt","size":15},"testname.rb":{"filename":"testname.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/7eec1175afef86ca8010c91d1d013ed7/raw/6a5a114faa1e32d84f6216e19c796a71b078128a/testname.rb","size":9}},"public":false,"created_at":"2018-10-26T00:16:58Z","updated_at":"2018-10-26T01:49:07Z","description":"Updated
+        private gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7eec1175afef86ca8010c91d1d013ed7/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79","forks_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/forks","commits_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/commits","id":"771d34607703f7d0bbdc1d92f2c8ba79","node_id":"MDQ6R2lzdDc3MWQzNDYwNzcwM2Y3ZDBiYmRjMWQ5MmYyYzhiYTc5","git_pull_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79.git","git_push_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79.git","html_url":"https://gist.github.com/771d34607703f7d0bbdc1d92f2c8ba79","files":{"gistfile1.txt":{"filename":"gistfile1.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/771d34607703f7d0bbdc1d92f2c8ba79/raw/338f7e6e62131675ba2331d2811081819a887fd4/gistfile1.txt","size":19}},"public":false,"created_at":"2018-10-25T01:01:59Z","updated_at":"2018-10-25T01:02:00Z","description":"New
+        private gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/771d34607703f7d0bbdc1d92f2c8ba79/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed","forks_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/forks","commits_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/commits","id":"b9287745812127f5929c21bc781d77ed","node_id":"MDQ6R2lzdGI5Mjg3NzQ1ODEyMTI3ZjU5MjljMjFiYzc4MWQ3N2Vk","git_pull_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed.git","git_push_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed.git","html_url":"https://gist.github.com/b9287745812127f5929c21bc781d77ed","files":{"testname.rb":{"filename":"testname.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/b9287745812127f5929c21bc781d77ed/raw/bba5729afd94dfbdce2f526e71bf429749e0b279/testname.rb","size":6}},"public":false,"created_at":"2018-10-24T18:52:07Z","updated_at":"2018-10-25T00:14:09Z","description":"Test
+        description 123","comments":0,"user":null,"comments_url":"https://api.github.com/gists/b9287745812127f5929c21bc781d77ed/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757","forks_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/forks","commits_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/commits","id":"7b8ddc0ee21db93696282f424900c757","node_id":"MDQ6R2lzdDdiOGRkYzBlZTIxZGI5MzY5NjI4MmY0MjQ5MDBjNzU3","git_pull_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757.git","git_push_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757.git","html_url":"https://gist.github.com/7b8ddc0ee21db93696282f424900c757","files":{"gistfile1.txt":{"filename":"gistfile1.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7b8ddc0ee21db93696282f424900c757/raw/036a75dcaa1261c246cfc946bf9adc58410ba03b/gistfile1.txt","size":11},"gistfile2.txt":{"filename":"gistfile2.txt","type":"text/plain","language":"Text","raw_url":"https://gist.githubusercontent.com/michdsouza/7b8ddc0ee21db93696282f424900c757/raw/f87e46cb88f3d6f5370144fe478bbb13886b41f7/gistfile2.txt","size":11}},"public":true,"created_at":"2018-10-23T22:55:52Z","updated_at":"2018-10-24T22:38:54Z","description":"Public
+        test gist","comments":0,"user":null,"comments_url":"https://api.github.com/gists/7b8ddc0ee21db93696282f424900c757/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378","forks_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/forks","commits_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/commits","id":"bd2e53640a456793b21f90f9bdbb9378","node_id":"MDQ6R2lzdGJkMmU1MzY0MGE0NTY3OTNiMjFmOTBmOWJkYmI5Mzc4","git_pull_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378.git","git_push_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378.git","html_url":"https://gist.github.com/bd2e53640a456793b21f90f9bdbb9378","files":{"flatten.rb":{"filename":"flatten.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/6cf75ea83f7bff4ecbc0b9490dc0a537ddff6458/flatten.rb","size":335},"flatten_test.rb":{"filename":"flatten_test.rb","type":"application/x-ruby","language":"Ruby","raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/fa133c8664d8cc7253de5e88e836f59db7ebe363/flatten_test.rb","size":313},"test_results":{"filename":"test_results","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/bd2e53640a456793b21f90f9bdbb9378/raw/4af375e8880d3dc3ad0faa3e9331d23fc9f5e6e3/test_results","size":122}},"public":false,"created_at":"2016-06-14T00:43:27Z","updated_at":"2016-06-14T00:43:27Z","description":"Citrusbyte
+        array flattener","comments":0,"user":null,"comments_url":"https://api.github.com/gists/bd2e53640a456793b21f90f9bdbb9378/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/adbc485dc6b6703c6868","forks_url":"https://api.github.com/gists/adbc485dc6b6703c6868/forks","commits_url":"https://api.github.com/gists/adbc485dc6b6703c6868/commits","id":"adbc485dc6b6703c6868","node_id":"MDQ6R2lzdGFkYmM0ODVkYzZiNjcwM2M2ODY4","git_pull_url":"https://gist.github.com/adbc485dc6b6703c6868.git","git_push_url":"https://gist.github.com/adbc485dc6b6703c6868.git","html_url":"https://gist.github.com/adbc485dc6b6703c6868","files":{"bash_profile_gist":{"filename":"bash_profile_gist","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/adbc485dc6b6703c6868/raw/c9942fa14c12675d0df0e36bc53a0bd9a67f67cc/bash_profile_gist","size":893}},"public":false,"created_at":"2014-10-10T15:47:46Z","updated_at":"2015-08-29T14:07:28Z","description":".bash_profile","comments":0,"user":null,"comments_url":"https://api.github.com/gists/adbc485dc6b6703c6868/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false},{"url":"https://api.github.com/gists/25fb7d81ba5b6e83a981","forks_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/forks","commits_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/commits","id":"25fb7d81ba5b6e83a981","node_id":"MDQ6R2lzdDI1ZmI3ZDgxYmE1YjZlODNhOTgx","git_pull_url":"https://gist.github.com/25fb7d81ba5b6e83a981.git","git_push_url":"https://gist.github.com/25fb7d81ba5b6e83a981.git","html_url":"https://gist.github.com/25fb7d81ba5b6e83a981","files":{"gitconfig_gist":{"filename":"gitconfig_gist","type":"text/plain","language":null,"raw_url":"https://gist.githubusercontent.com/michdsouza/25fb7d81ba5b6e83a981/raw/1efcc885b8a03509ecfce3e158fc82be97a709d2/gitconfig_gist","size":648}},"public":false,"created_at":"2014-10-10T15:33:03Z","updated_at":"2015-08-29T14:07:28Z","description":".gitconfig","comments":0,"user":null,"comments_url":"https://api.github.com/gists/25fb7d81ba5b6e83a981/comments","owner":{"login":"michdsouza","id":879181,"node_id":"MDQ6VXNlcjg3OTE4MQ==","avatar_url":"https://avatars0.githubusercontent.com/u/879181?v=4","gravatar_id":"","url":"https://api.github.com/users/michdsouza","html_url":"https://github.com/michdsouza","followers_url":"https://api.github.com/users/michdsouza/followers","following_url":"https://api.github.com/users/michdsouza/following{/other_user}","gists_url":"https://api.github.com/users/michdsouza/gists{/gist_id}","starred_url":"https://api.github.com/users/michdsouza/starred{/owner}{/repo}","subscriptions_url":"https://api.github.com/users/michdsouza/subscriptions","organizations_url":"https://api.github.com/users/michdsouza/orgs","repos_url":"https://api.github.com/users/michdsouza/repos","events_url":"https://api.github.com/users/michdsouza/events{/privacy}","received_events_url":"https://api.github.com/users/michdsouza/received_events","type":"User","site_admin":false},"truncated":false}]'
+    http_version:
+  recorded_at: Fri, 26 Oct 2018 15:58:57 GMT
+recorded_with: VCR 4.0.0

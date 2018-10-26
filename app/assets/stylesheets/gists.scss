@@ -1,3 +1,11 @@
 // Place all the styles related to the Gists controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+.btn-primary, .btn-danger {
+  margin: 2px;
+}
+
+h1, h3 {
+  margin-top: 50px;
+}

@@ -14,16 +14,16 @@ describe Github::Gateway do
     end
 
     context 'response unsuccessful' do
-      it "raises an error" do
+      it 'raises an error' do
         VCR.use_cassette('github/gists_error') do
-          expect{Github::Gateway.get_gists(user)}.to raise_error(Github::ApiError)
+          expect { Github::Gateway.get_gists(user) }.to raise_error(Github::ApiError)
         end
       end
     end
   end
 
   describe '.create' do
-    let(:new_gist) { "{\"description\":\"Test gist 22121\",\"filename\":\"\",\"content\":\"fafdsdfdsfsf\"}" }
+    let(:new_gist) { '{"description":"Test gist 22121","filename":"","content":"fafdsdfdsfsf"}' }
 
     context 'response successful' do
       it 'creates a private gist' do
@@ -35,16 +35,15 @@ describe Github::Gateway do
     end
 
     context 'response unsuccessful' do
-      it "raises an error" do
+      it 'raises an error' do
         VCR.use_cassette('github/create_error') do
-          expect{Github::Gateway.create(new_gist, user)}.to raise_error(Github::ApiError)
+          expect { Github::Gateway.create(new_gist, user) }.to raise_error(Github::ApiError)
         end
       end
     end
   end
 
   describe '.get_gist' do
-
     context 'response successful' do
       it 'gets a gist by id' do
         VCR.use_cassette('github/get_gist') do
@@ -56,16 +55,22 @@ describe Github::Gateway do
     end
 
     context 'response unsuccessful' do
-      it "raises an error" do
+      it 'raises an error' do
         VCR.use_cassette('github/get_gist_error') do
-          expect{Github::Gateway.get_gist(gist_id, user)}.to raise_error(Github::ApiError)
+          expect { Github::Gateway.get_gist(gist_id, user) }.to raise_error(Github::ApiError)
         end
       end
     end
   end
 
   describe '.update_gist' do
-    let(:edited_gist) { "{\"description\":\"Updated private gist\",\"filename\":\"gistfile500.txt\",\"content\":\"updated content\"}" }
+    let(:edited_gist) do
+      {
+        description: 'Updated private gist',
+        filename: 'gistfile500.txt',
+        content: 'updated content'
+      }.to_json
+    end
 
     context 'response successful' do
       it 'updates a gist' do
@@ -77,9 +82,9 @@ describe Github::Gateway do
     end
 
     context 'response unsuccessful' do
-      it "raises an error" do
+      it 'raises an error' do
         VCR.use_cassette('github/update_gist_error') do
-          expect{Github::Gateway.update_gist(gist_id, edited_gist, user)}.to raise_error(Github::ApiError)
+          expect { Github::Gateway.update_gist(gist_id, edited_gist, user) }.to raise_error(Github::ApiError)
         end
       end
     end
@@ -96,13 +101,11 @@ describe Github::Gateway do
     end
 
     context 'response unsuccessful' do
-      it "raises an error" do
+      it 'raises an error' do
         VCR.use_cassette('github/delete_gist_error') do
-          expect{Github::Gateway.delete_gist(gist_id, user)}.to raise_error(Github::ApiError)
+          expect { Github::Gateway.delete_gist(gist_id, user) }.to raise_error(Github::ApiError)
         end
       end
     end
   end
-
-
 end

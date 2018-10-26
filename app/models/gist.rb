@@ -13,5 +13,4 @@ class Gist
   def persisted?
     false
   end
-
 end

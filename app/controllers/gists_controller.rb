@@ -1,6 +1,6 @@
 class GistsController < ApplicationController
   before_action :authorize_user
-  rescue_from Github::ApiError, :with => :render_error
+  rescue_from Github::ApiError, with: :render_error
 
   def index
     @gists = Github::Gateway.get_gists(current_user)
@@ -12,7 +12,7 @@ class GistsController < ApplicationController
 
   def create
     if Github::Gateway.create(gist_params.to_json, current_user)
-      redirect_to gists_path, notice: "Gist was successfully created."
+      redirect_to gists_path, notice: 'Gist was successfully created.'
     else
       render :new
     end
@@ -24,12 +24,12 @@ class GistsController < ApplicationController
 
   def update
     Github::Gateway.update_gist(params[:id], params[:gist].to_json, current_user)
-    redirect_to gists_path, notice: "Gist was successfully updated."
+    redirect_to gists_path, notice: 'Gist was successfully updated.'
   end
 
   def destroy
     Github::Gateway.delete_gist(params[:id], current_user)
-    redirect_to gists_path, notice: "Gist was successfully deleted."
+    redirect_to gists_path, notice: 'Gist was successfully deleted.'
   end
 
   private

@@ -3,7 +3,7 @@ require 'spec_helper'
 describe GistsController do
   let(:user) { FactoryGirl.build(:user) }
 
-  describe "GET index" do
+  describe 'GET index' do
     before do
       allow(controller).to receive_messages(current_user: user)
     end

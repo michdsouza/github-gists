@@ -14,18 +14,18 @@ VCR.configure do |config|
 end
 
 OmniAuth.config.test_mode = true
-OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new({
-  :provider => 'github',
-  :uid => '12345',
-  :info => {
-      :name => 'Buddy',
-      :email => 'buddy@robot.com',
-      :image => 'buddysimage'
+OmniAuth.config.mock_auth[:github] = OmniAuth::AuthHash.new(
+  provider: 'github',
+  uid: '12345',
+  info: {
+    name: 'Buddy',
+    email: 'buddy@robot.com',
+    image: 'buddysimage'
   },
-  :credentials => {
-    :token => "my-access-token"
+  credentials: {
+    token: 'my-access-token'
   }
-})
+)
 
 # Add additional requires below this line. Rails is not loaded until this point!
 

@@ -2,7 +2,7 @@ require 'rails_helper'
 
 describe 'Sessions' do
   before do
-    Rails.application.env_config["omniauth.auth"] = OmniAuth.config.mock_auth[:gituhb]
+    Rails.application.env_config['omniauth.auth'] = OmniAuth.config.mock_auth[:gituhb]
   end
 
   it 'user signs in' do

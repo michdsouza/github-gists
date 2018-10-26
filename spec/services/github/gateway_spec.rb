@@ -1,6 +1,5 @@
 describe Github::Gateway do
   let(:user) { FactoryGirl.create(:user, oauth_token: 'my-access-token') }
-  let(:gist_id) { '11e78e3a1145f471aa9ec113f908b446' }
 
   describe '.get_gists' do
     context 'response successful' do
@@ -8,7 +7,7 @@ describe Github::Gateway do
         VCR.use_cassette('github/gists') do
           gists = Github::Gateway.get_gists(user)
           expect(gists).to be_a Array
-          expect(gists.size).to eq 6
+          expect(gists.size).to eq 8
         end
       end
     end
@@ -44,12 +43,14 @@ describe Github::Gateway do
   end
 
   describe '.get_gist' do
+    let(:gist_id) { 'b9287745812127f5929c21bc781d77ed' }
+
     context 'response successful' do
       it 'gets a gist by id' do
         VCR.use_cassette('github/get_gist') do
           gist = Github::Gateway.get_gist(gist_id, user)
           expect(gist.id).to eq gist_id
-          expect(gist.description).to eq 'Private test gist'
+          expect(gist.description).to eq 'Test description 123'
         end
       end
     end
@@ -64,6 +65,8 @@ describe Github::Gateway do
   end
 
   describe '.update_gist' do
+    let(:gist_id) { '7eec1175afef86ca8010c91d1d013ed7' }
+
     let(:edited_gist) do
       {
         description: 'Updated private gist',
@@ -91,6 +94,8 @@ describe Github::Gateway do
   end
 
   describe '.delete_gist' do
+    let(:gist_id) { 'ba851ffc2bfe4ad9e870cad23559ea3b' }
+
     context 'response successful' do
       it 'deletes a gist' do
         VCR.use_cassette('github/delete_gist') do

@@ -2,17 +2,15 @@
 http_interactions:
 - request:
     method: get
-    uri: https://api.github.com/gists/11e78e3a1145f471aa9ec113f908b446?access_token=my-access-token
+    uri: https://api.github.com/gists/b9287745812127f5929c21bc781d77ed
     body:
       encoding: US-ASCII
       string: ''
     headers:
-      Accept-Encoding:
-      - gzip;q=1.0,deflate;q=0.6,identity;q=0.3
-      Accept:
-      - "*/*"
+      Authorization:
+      - token my-access-token
       User-Agent:
-      - Ruby
+      - github-gists
   response:
     status:
       code: 401
@@ -21,7 +19,7 @@ http_interactions:
       Server:
       - GitHub.com
       Date:
-      - Thu, 25 Oct 2018 20:33:58 GMT
+      - Fri, 26 Oct 2018 01:47:52 GMT
       Content-Type:
       - application/json; charset=utf-8
       Content-Length:
@@ -33,9 +31,9 @@ http_interactions:
       X-Ratelimit-Limit:
       - '60'
       X-Ratelimit-Remaining:
-      - '57'
+      - '51'
       X-Ratelimit-Reset:
-      - '1540503056'
+      - '1540520411'
       Access-Control-Expose-Headers:
       - ETag, Link, Retry-After, X-GitHub-OTP, X-RateLimit-Limit, X-RateLimit-Remaining,
         X-RateLimit-Reset, X-OAuth-Scopes, X-Accepted-OAuth-Scopes, X-Poll-Interval
@@ -54,10 +52,10 @@ http_interactions:
       Content-Security-Policy:
       - default-src 'none'
       X-Github-Request-Id:
-      - 3DDE:77F3:98ECC:16B861:5BD228B6
+      - 3C02:77F3:208F8F:4D6C72:5BD27248
     body:
       encoding: UTF-8
       string: '{"message":"Bad credentials","documentation_url":"https://developer.github.com/v3"}'
     http_version: 
-  recorded_at: Thu, 25 Oct 2018 20:33:58 GMT
+  recorded_at: Fri, 26 Oct 2018 01:47:52 GMT
 recorded_with: VCR 4.0.0

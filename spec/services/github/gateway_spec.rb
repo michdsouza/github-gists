@@ -1,5 +1,5 @@
 describe Github::Gateway do
-  let(:user) { FactoryGirl.create(:user, oauth_token: 'my-access-token') }
+  let(:user) { FactoryBot.create(:user, oauth_token: 'my-access-token') }
 
   describe '.get_gists' do
     context 'response successful' do

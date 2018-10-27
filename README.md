@@ -38,7 +38,7 @@ To stay within the guidelines enforced by the community [Ruby Style Guide](https
 
 ## Heroku App
 
-https://cisco-code-challenge-mdsouza.herokuapp.com
+https://cisco-code-challenge-mdsouza.herokuapp.com/gists
 
 ## Design Choices
 

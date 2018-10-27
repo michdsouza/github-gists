@@ -42,6 +42,8 @@ https://cisco-code-challenge-mdsouza.herokuapp.com/gists
 
 ## Design Choices
 
+Omniauth was used so that authentication could be handled by Github. This meant that the application did not have to be responsible for storing usernames and passwords, and hence, is more secure.
+
 To keep the MVP implementation simple, the interface does not support creating or editing gists with multiple files.
 
 ## CircleCI

@@ -38,7 +38,7 @@ To stay within the guidelines enforced by the community [Ruby Style Guide](https
 
 ## Heroku App
 
-https://cisco-code-challenge-mdsouza.herokuapp.com
+https://cisco-code-challenge-mdsouza.herokuapp.com/gists
 
 ## Design Choices
 
@@ -46,4 +46,7 @@ To keep the MVP implementation simple, the interface does not support creating o
 
 ## CircleCI
 
-For continuous integration.
+For continuous integration
+
+<img width="1355" alt="screen shot 2018-10-26 at 9 34 06 pm" src="https://user-images.githubusercontent.com/879181/47597662-5bcfbd00-d967-11e8-8b35-9ba250e97dbf.png">
+
